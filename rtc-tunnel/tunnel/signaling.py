@@ -1,3 +1,8 @@
+from .aiortc_source import RTCSessionDescription, RTCIceCandidate
+
+from .aiortc_source.sdp import candidate_from_sdp, candidate_to_sdp
+
+
 import asyncio
 import json
 import sys
@@ -5,8 +10,6 @@ import requests
 import websockets
 from json import JSONDecodeError
 
-from aiortc import RTCSessionDescription, RTCIceCandidate
-from aiortc.sdp import candidate_from_sdp, candidate_to_sdp
 
 
 class ConsoleSignaling:

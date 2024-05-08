@@ -2,7 +2,9 @@ import asyncio
 import logging
 import traceback
 
-from aiortc import RTCSessionDescription, RTCPeerConnection, RTCDataChannel
+#from aiortc import RTCSessionDescription, RTCPeerConnection, RTCDataChannel
+from .aiortc_source import RTCSessionDescription, RTCPeerConnection, RTCDataChannel
+
 
 from .util import now
 from .tasks import Tasks
